@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Umair Zaki Ustad | Gym &amp; Fitness Coaching</title>
+<meta name="description" content="Umair Zaki Ustad gym: training services, gym pictures, mentors, workout videos and diet plans. Book a free trial session.">
+<meta property="og:title" content="Umair Zaki Ustad | Gym & Fitness Coaching">
+<meta property="og:description" content="Strength, muscle building, weight loss, boxing and diet plans with real mentors.">
+<meta property="og:image" content="images/hall-industrial.jpg">
+<meta name="theme-color" content="#141210">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f2a516'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23141210'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap top">
+    <a class="logo" href="#home" aria-label="Umair Zaki Ustad home">Umair Zaki <span>Ustad</span></a>
+    <a class="btn small" href="#contact">Book free trial</a>
+  </div>
+  <nav class="wrap tabs" aria-label="Main sections">
+    <a href="#services">Our Services</a>
+    <a href="#pictures">Gym Pictures</a>
+    <a href="#mentors">Our Mentors</a>
+    <a href="#videos">Gym Videos</a>
+    <a href="#diet">Diet Plans</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section class="page" id="page-home" hidden>
+    <div class="hero">
+      <img src="images/hall-industrial.jpg" alt="" fetchpriority="high">
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Gym &amp; fitness coaching</p>
+        <h1>Umair Zaki <span>Ustad</span></h1>
+        <p class="lead">Train under real mentors, with a plan for the gym floor and for your plate.</p>
+        <div class="row">
+          <a class="btn" href="#contact">Book a free trial</a>
+          <a class="btn ghost" href="#services">Explore services</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap block">
+      <h2>Everything in one place</h2>
+      <div class="tiles" id="home-tiles"></div>
+    </div>
+    <div class="band">
+      <div class="wrap block">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><b>Book your trial</b><span>Send your details and pick a time that suits you.</span></li>
+          <li><b>Meet your mentor</b><span>Talk through your goal, your experience and any injuries.</span></li>
+          <li><b>Get your plan</b><span>Leave with a training routine and a diet plan you can follow.</span></li>
+          <li><b>Train and track</b><span>Your mentor checks your form and adjusts the plan as you progress.</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="wrap block">
+      <h2>Common questions</h2>
+      <div class="faq" id="faq"></div>
+    </div>
+    <div class="band cta">
+      <div class="wrap">
+        <h2>Your first session is on us</h2>
+        <a class="btn" href="#contact">Book a free trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="page" id="page-services" hidden>
+    <div class="wrap block">
+      <h1 class="title">Our Services</h1>
+      <p class="intro">Choose a goal to narrow the list, then open any service to see what is included.</p>
+      <div class="chips" id="service-filter"></div>
+      <div class="grid" id="service-list"></div>
+    </div>
+    <div class="band">
+      <div class="wrap block">
+        <h2>Weekly timetable</h2>
+        <p class="note" data-sample>Sample timetable. Replace it with your real class times.</p>
+        <div class="chips" id="day-filter"></div>
+        <div class="table-scroll"><table class="timetable"><thead><tr><th>Time</th><th>Class</th><th>Mentor</th><th><span class="sr">Book</span></th></tr></thead><tbody id="timetable"></tbody></table></div>
+      </div>
+    </div>
+    <div class="wrap block">
+      <h2>Membership</h2>
+      <p class="note" data-sample>Sample plans. Add your real prices and what each plan includes.</p>
+      <div class="grid plans" id="plans"></div>
+    </div>
+  </section>
+
+  <!-- PICTURES -->
+  <section class="page" id="page-pictures" hidden>
+    <div class="wrap block">
+      <h1 class="title">Gym Pictures</h1>
+      <p class="intro">Select any picture to view it full size. Use the arrow keys or swipe to move between pictures.</p>
+      <p class="note" data-sample>Sample stock photos from Unsplash, not pictures of this gym. Replace them with your own.</p>
+      <div class="chips" id="picture-filter"></div>
+      <div class="gallery" id="picture-list"></div>
+    </div>
+  </section>
+
+  <!-- MENTORS -->
+  <section class="page" id="page-mentors" hidden>
+    <div class="wrap block">
+      <h1 class="title">Our Mentors</h1>
+      <p class="intro">Find the right mentor for your goal, read their profile and book a session with them.</p>
+      <p class="note" data-sample>Sample profiles using stock photos. Replace them with your real mentors.</p>
+      <div class="chips" id="mentor-filter"></div>
+      <div class="grid mentors" id="mentor-list"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="page" id="page-videos" hidden>
+    <div class="wrap block">
+      <h1 class="title">Gym Videos</h1>
+      <p class="intro">Technique guides, workouts and meal prep, hand-picked from coaches on YouTube.</p>
+      <div class="video-layout">
+        <div>
+          <div class="player" id="player"></div>
+          <h2 class="now-title" id="now-title"></h2>
+          <p class="now-meta" id="now-meta"></p>
+        </div>
+        <div>
+          <label class="field"><span>Search videos</span><input type="search" id="video-search" placeholder="Squat, boxing, meal prep"></label>
+          <div class="chips" id="video-filter"></div>
+          <ul class="playlist" id="playlist"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIET -->
+  <section class="page" id="page-diet" hidden>
+    <div class="wrap block">
+      <h1 class="title">Diet Plans</h1>
+      <p class="intro">Work out your daily calories and protein, then follow a seven-day plan built around everyday home food.</p>
+      <div class="calc">
+        <form id="calc-form" class="calc-form">
+          <h2>Calorie calculator</h2>
+          <div class="fields">
+            <label class="field"><span>Age</span><input name="age" type="number" min="16" max="80" required value="25"></label>
+            <label class="field"><span>Sex</span><select name="sex"><option value="m">Male</option><option value="f">Female</option></select></label>
+            <label class="field"><span>Weight (kg)</span><input name="weight" type="number" min="35" max="200" required value="75"></label>
+            <label class="field"><span>Measure height in</span><select name="unit" id="height-unit">
+              <option value="ft" selected>Feet</option>
+              <option value="cm">Centimeters</option>
+            </select></label>
+            <label class="field" data-height="ft"><span>Height (feet)</span><input name="feet" type="number" min="4" max="7" step="1" required value="5"></label>
+            <label class="field" data-height="ft"><span>Inches</span><input name="inches" type="number" min="0" max="11" step="1" required value="8"></label>
+            <label class="field wide" data-height="cm" hidden><span>Height (cm)</span><input name="height" type="number" min="122" max="240" required value="173" disabled></label>
+            <label class="field wide"><span>Activity</span><select name="activity">
+              <option value="1.2">Little or no exercise</option>
+              <option value="1.375">Exercise 1 to 3 days a week</option>
+              <option value="1.55" selected>Exercise 3 to 5 days a week</option>
+              <option value="1.725">Exercise 6 to 7 days a week</option>
+            </select></label>
+            <label class="field wide"><span>Goal</span><select name="goal">
+              <option value="fat">Lose fat</option>
+              <option value="muscle">Build muscle</option>
+              <option value="balanced">Stay fit</option>
+            </select></label>
+          </div>
+          <button class="btn" type="submit">Calculate</button>
+        </form>
+        <div class="calc-result" id="calc-result" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="band" id="diet-plan">
+      <div class="wrap block">
+        <h2>Your seven-day plan</h2>
+        <div class="diet-controls no-print">
+          <div class="chips" id="plan-filter"></div>
+          <label class="check"><input type="checkbox" id="veg-only"> Vegetarian only</label>
+          <button class="btn ghost small" type="button" id="print-plan">Print plan</button>
+        </div>
+        <p class="plan-summary" id="plan-summary"></p>
+        <div class="chips no-print" id="diet-day-filter"></div>
+        <h3 class="print-only" id="print-heading"></h3>
+        <div class="meals" id="meals"></div>
+        <p class="day-total" id="day-total"></p>
+      </div>
+    </div>
+    <div class="wrap block no-print">
+      <h2>Weekly grocery list</h2>
+      <p class="intro">Everything the plan above needs this week. Tick items off as you shop.</p>
+      <ul class="grocery" id="grocery"></ul>
+      <p class="note">Calories and protein are estimates and will vary with portions and cooking. These plans are general guidance, not medical advice. If you are pregnant, have a medical condition or take medication, speak to a doctor or dietitian first. Calculator: Mifflin-St Jeor equation. Protein targets: <a href="https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8" target="_blank" rel="noopener">ISSN position stand</a>.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page" id="page-contact" hidden>
+    <div class="wrap block contact">
+      <div>
+        <h1 class="title">Book a free trial</h1>
+        <p class="intro" id="contact-intro">Send your details and the gym will contact you to confirm your session.</p>
+        <ul class="contact-list" id="contact-list"></ul>
+      </div>
+      <form id="enquiry" class="card form" novalidate>
+        <label class="field"><span>Full name</span><input name="name" autocomplete="name" required maxlength="80"></label>
+        <label class="field"><span>Phone number</span><input name="phone" type="tel" autocomplete="tel" required maxlength="20"></label>
+        <label class="field"><span>Email (optional)</span><input name="email" type="email" autocomplete="email" maxlength="120"></label>
+        <label class="field"><span>I am interested in</span><select name="interest" id="interest"></select></label>
+        <label class="field"><span>Best time to train</span><select name="time">
+          <option>Morning</option><option>Afternoon</option><option>Evening</option><option>Flexible</option>
+        </select></label>
+        <label class="field"><span>Message (optional)</span><textarea name="message" id="message" rows="4" maxlength="1000"></textarea></label>
+        <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+        <button class="btn" type="submit">Send request</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot no-print">
+  <div class="wrap foot">
+    <div>
+      <p class="logo">Umair Zaki <span>Ustad</span></p>
+      <p>&copy; <span id="year"></span> Umair Zaki Ustad. All rights reserved.</p>
+    </div>
+    <div class="foot-links">
+      <a href="#services">Services</a><a href="#pictures">Pictures</a><a href="#mentors">Mentors</a>
+      <a href="#videos">Videos</a><a href="#diet">Diet Plans</a><a href="#contact">Contact</a>
+      <button type="button" class="link" id="open-credits">Photo credits</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="modal" class="modal"><button class="close" type="button" aria-label="Close">&times;</button><div id="modal-body"></div></dialog>
+<dialog id="lightbox" class="lightbox">
+  <button class="close" type="button" aria-label="Close">&times;</button>
+  <button class="nav prev" type="button" aria-label="Previous picture">&#8249;</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="nav next" type="button" aria-label="Next picture">&#8250;</button>
+</dialog>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
